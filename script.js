@@ -1,4 +1,10 @@
-const secretWord = "peru1024";
+const secretWord const questions = [
+    "Mi primera parte es una nación andina de 4 letras. Mi segunda parte es 2 elevado a la décima. Todo junto forma una clave alfanumérica. ¿Cuál es?",
+    "Decodificá: País de las líneas de Nazca + 2^10 en decimal = ?",
+    "Soy un país con una maravilla del mundo moderno. Si me unís con la base del kilobyte digital, ¿cómo me llamo?",
+    "Mi nombre es un país sudamericano y mi número es una potencia de 2 usada en almacenamiento. ¿Cuál es la clave?"
+];
+ = "peru1024";
 let guessedLetters = [];
 let attempts = 6;
 let wins = localStorage.getItem("wins") ? parseInt(localStorage.getItem("wins")) : 0;
@@ -160,3 +166,4 @@ function restartGame() {
 drawBase();
 displayWord();
 createKeyboard();
+
