@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #0f172a, #020617);
+    color: white;
+    text-align: center;
+}
+
+/* CONTENEDOR */
+.container {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* TEXTO */
+h1 {
+    margin-bottom: 5px;
+}
+
+.score {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* PALABRA */
+#word {
+    font-size: 2em;
+    letter-spacing: 8px;
+    margin: 20px 0;
+}
+
+/* TECLADO */
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.key {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s ease, background 0.3s;
+}
+
+.key:active {
+    transform: scale(0.9);
+}
+
+.correct {
+    background-color: #22c55e;
+}
+
+.wrong {
+    background-color: #ef4444;
+}
+
+/* BOTON */
+button {
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ANIMACIONES */
+.fade-in {
+    animation: fade 0.5s ease-in;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE PARA MOBILE */
+@media (max-width: 480px) {
+    #word {
+        font-size: 1.5em;
+        letter-spacing: 5px;
+    }
+
+    .key {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
