@@ -1,4 +1,4 @@
-const secretWord  = "peru1024";
+const secretWord = "peru1024";
 let guessedLetters = [];
 let attempts = 6;
 let wins = localStorage.getItem("wins") ? parseInt(localStorage.getItem("wins")) : 0;
@@ -160,5 +160,3 @@ function restartGame() {
 drawBase();
 displayWord();
 createKeyboard();
-
-
