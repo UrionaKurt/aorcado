@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado - peru1024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎮 Ahorcado</h1>
+
+    <div class="score">
+        🏆 Victorias: <span id="wins">0</span>
+    </div>
+
+    <canvas id="hangmanCanvas" width="200" height="250"></canvas>
+
+    <div id="word" class="fade-in"></div>
+
+    <p>Intentos restantes: <span id="attempts">6</span></p>
+
+    <div id="keyboard"></div>
+
+    <p id="message" class="fade-in"></p>
+
+    <button onclick="restartGame()">🔄 Reiniciar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
